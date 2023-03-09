@@ -284,7 +284,8 @@ let myBox = createBox("Test title",htmlOutPut);
   }
   );
   myBox.querySelectorAll('.genealogy-tree li').forEach(li => {
-    li.addEventListener('click', function (e) {
+    var a = li.querySelector("a")
+    a.addEventListener('click', function (e) {
       var children = li.querySelectorAll('li > ul');
       for (let i = 0; i < children.length; i++) {
         if (children[i].style.display == 'none') {
@@ -305,8 +306,6 @@ let myBox = createBox("Test title",htmlOutPut);
     );
   }
   );
-  ns.tprint(getComputedStyle(myBox).minWidth)
-  ns.tprint(getComputedStyle(myBox).minHeight)
 
   while (doc.body.contains(myBox)) await ns.asleep(100);
 
