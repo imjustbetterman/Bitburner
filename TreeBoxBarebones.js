@@ -180,6 +180,8 @@ var htmlOutPut = `
     border-left: 0.125em solid #ccc;
     width: 0; height: 1.25em;
 }
+
+
 .genealogy-tree li a{
     text-decoration: none;
     color: #666;
@@ -191,8 +193,16 @@ var htmlOutPut = `
     -moz-border-radius: 0.3125em;
 }
 
+
+.genealogy-tree li a div div div h3{
+  color:white;
+}
+.genealogy-tree li a:hover > div div div h3{
+  color:orange;
+}
+
 .genealogy-tree li a:hover+ul li::after, 
-.genealogy-tree li a:hover+ul li::before, 
+.genealogy-tree li a:hover+ul li::before,
 .genealogy-tree li a:hover+ul::before, 
 .genealogy-tree li a:hover+ul ul::before{
     border-color:  #fbba00;
@@ -227,7 +237,7 @@ function formatHTML(input) {
             '            <div class="member-image">\n' +
             '              <img src="https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/value-server-512.png" alt="Member" width="20" height="20">\n' +
             '              <div class="member-details">\n' +
-            '                <h3>' + input[index] + '</h3>\n' +
+            '                <h3 class="serverName">' + input[index] + '</h3>\n' +
             '              </div>\n' +
             '            </div>\n' +
             '          </div>\n' +
