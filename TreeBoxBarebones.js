@@ -284,8 +284,7 @@ let myBox = createBox("Test title",htmlOutPut);
   }
   );
   myBox.querySelectorAll('.genealogy-tree li').forEach(li => {
-    var a = li.querySelector("a")
-    a.addEventListener('click', function (e) {
+    li.querySelector("a").addEventListener('click', function (e) {
       var children = li.querySelectorAll('li > ul');
       for (let i = 0; i < children.length; i++) {
         if (children[i].style.display == 'none') {
