@@ -225,7 +225,7 @@ function formatHTML(input) {
             '        <a href="javascript:void(0);">\n' +
             '          <div class="member-view-box">\n' +
             '            <div class="member-image">\n' +
-            '              <img src="https://image.flaticon.com/icons/svg/145/145867.svg" alt="Member">\n' +
+            '              <img src="https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/value-server-512.png" alt="Member" width="20" height="20">\n' +
             '              <div class="member-details">\n' +
             '                <h3>' + input[index] + '</h3>\n' +
             '              </div>\n' +
@@ -280,9 +280,14 @@ let myBox = createBox("Test title",htmlOutPut);
         if (children[i].style.display == 'none') {
           children[i].style.display = '';
           children[i].classList.add('active');
+          //servers shown
+          children[i].parentElement.getElementsByTagName("a")[0].getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("img")[0].src = "https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/value-server-512.png"
+
         } else if (children[i].style.display == '') {
           children[i].style.display = 'none';
           children[i].classList.remove('active');
+          //servers hidden
+          children[i].parentElement.getElementsByTagName("a")[0].getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("img")[0].src = "https://cdn-icons-png.flaticon.com/512/3962/3962020.png"
         }
       }
       e.stopPropagation();
