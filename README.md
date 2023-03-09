@@ -1,4 +1,4 @@
-# Bitburner
+# ServerTrees
 Bitburner stuff, filled with bitburner stuff for bitburner people, to run on bitburner. to burn some bits.  
 Big hansome man who made guis possible: [https://github.com/Snarling/bitburner-scripts#box](https://github.com/Snarling/bitburner-scripts#box)  
 #### Sections:  
