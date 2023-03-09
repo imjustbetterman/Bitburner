@@ -264,7 +264,7 @@ function formatHTML(input) {
 
 htmlOutPut = htmlOutPut+formatHTML(wholeList)
 
-let myBox = createBox("Tree.Js",htmlOutPut);
+let myBox = createBox("TreeMini.Js",htmlOutPut);
 
 
     if (myBox.querySelector('.box>.body').height < myBox.height) {
